@@ -32,8 +32,8 @@ There have been several similar technologies developed recently to analyze the i
 
 The general method is as follows:
 
-![MARGI Overview](/Users/blakegabel/Documents/beng183/MARGI.jpg)
-Graphical overview [3]
+![Graphical Overview](comparison.png)
+Graphical overview [2]
 
 1. Crosslink the DNA to any nearby RNA, typically using formaldehyde
 2. Ligate the RNA then the DNA to a synthesized linker
@@ -42,10 +42,11 @@ Graphical overview [3]
 4. DNA library is fragmented using either sonication or a digestive enzyme
 5. Chimeric fragments are captured using the tag on the linker
 6. Fragments are sequenced and appropriately mapped to either the genome or transcriptome
+	* The figure above end with the fragments prepped for sequencing
 
 Each method has its own unique pipeline for data analysis and an example of processed ChAR-seq that maps the relative position of transcribed RNA to its genomic location post-transcription
 
-![ChAR-seq](/Users/blakegabel/Documents/beng183/charseq.jpg)
+![ChAR-seq](charseq.jpg)
 *A.* All mapped RNA (y-axis) to genome location (x-axis) *B.* mRNA *C.* snRNA *D.* Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. *E.* Scatter plot of length normalized chromatin-contacts versus total expression for each RNA.  
 [5]
 
