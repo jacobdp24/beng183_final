@@ -1,7 +1,7 @@
 # RNA-Chromatin Interactions 
 
-###### BENG183 Final Paper date:12-9-19
-###### Group 17 Aditya Sampath, Blake Gabel, Jacob Doering-Powell
+###### BENG183 Final Paper date: 12/9/2019
+###### Group 17: Aditya Sampath, Blake Gabel, Jacob Doering-Powell
 
 1. [Introduction](#1)
 2. [Understanding types of RNA-genome interactions](#2)
