@@ -4,22 +4,7 @@
 ###### Group 17 Aditya Sampath, Blake Gabel, Jacob Doering-Powell
 
 1. [Introduction](#1)
-2. [History](#2)
-3. [The Goal of CHIP-Sequencing](#3)
-4. [Understanding functional features of the genome](#4)<br>
-    4.1. [Nucleosome](#41)<br>
-    4.2. [Transcription Factors and TF binding sites](#42)<br>
-    4.3. [Histone Modification](#43)<br>
-    4.4. [Insulator](#44)
-5. [Overivew of Chip-Squencing](#5)<br>
-    5.1. [The workflow of CHIP-Sequencing](#51)<br>
-    5.2. [Experimental Design](#52)
-6. [Data Analysis](#6)<br>
-    6.1. [FastQ File Format](#61)<br>
-    6.2. [Downstream Analysis](#62)
-7. [Advantages of Chip-Sequencing](#7)
-8. [Applications](#8)
-
+2. [Understanding types of RNA-genome interactions](#2)
 
 
 ## 1. Introduction<a name="1"></a>
