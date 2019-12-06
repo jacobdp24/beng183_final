@@ -5,7 +5,12 @@
 
 1. [Introduction](#1)
 2. [Understanding types of RNA-genome interactions](#2)
-
+3. [Experimental Techniques](#3)
+    3.1. [Methods](#3.1)<br>
+    3.2. [Comparisons to GRID-seq](#3.2)
+4. [Impact](#4)
+    4.1. [Epigenetic Impact](#4.1)<br>
+    4.2. [Fusion Transcripts](#4.2)
 
 ## 1. Introduction<a name="1"></a>
 
@@ -24,9 +29,9 @@ Meanwhile, trans-acting RNA occurs due to the formation of triplex structures, w
 
 One of the other major characteristics that separate different types of RNA-genome interactions are the proximity between the RNA and the genome that are interacting. Due to the small amount of space in the nucleus, high amounts of interactions occur between molecules that aren’t located immediately next to one another. Many of these distant interactions form what’s known as a transcription hub- active gene clusters that are not close in terms of linear chromosomal distance but are folded into close spatial proximity. In general, while the majority of RNA-genome interactions are proximal (within 2000bp of each other on the same chromosome), a still-significant amount are farther away. More specifically, 4% are distal (more than 2000bp away on the same chromosome), and 15-20% were are inter-chromosomal, indicating a large amount of long range RNA-DNA interactions [2].
 
-# Experimental Techniques
+## 3. Experimental Techniques<a name="3"></a>
 
-#### Method
+### 3.1 Methods<a name="3.1"></a>
 
 There have been several similar technologies developed recently to analyze the interactions between RNA and chromatin, including MARGI, ChAR-seq, and GRID-seq. The overarching method to identify such interactions is surprisingly similar between these technologies.
 
@@ -50,15 +55,16 @@ Each method has its own unique pipeline for data analysis and an example of proc
 *A.* All mapped RNA (y-axis) to genome location (x-axis) *B.* mRNA *C.* snRNA *D.* Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. *E.* Scatter plot of length normalized chromatin-contacts versus total expression for each RNA.  
 [5]
 
-#### Comparisons to GRID-seq
+### 3.2 Comparisons to GRID-seq<a name="3.2"></a>
 After developing their new technology, GRID-seq, to identify RNA-chromatin interactions, Zhou and his colleagues compared it to the other two recently developed technologies, MARGI and ChAR-seq.
 
 One disadvantage of MARGI is that it employs a circularization step after reverse transcription and then the linker is cleaved to allow identification of RNA or DNA end. This circularization is not specific to the chimeric cDNA-gDNA fragment of interest, allowing for potential gDNA-gDNA fragments to be captured and sequenced. To avoid this error, the GRID-seq analysis pipeline ensures that all RNA reads only map somewhere to the transcribed genic regions [4].
 
 Both GRID-seq and ChAR-seq attempted to normalize for nonspecific RNA interactions, either from free floating RNA or RNA that associated during library prep. The authors of ChAR-seq added excess free floating RNA to determine the false positive rate, which they calculate to be approximately 0.5% [5]. The authors of GRID-seq compared experimentally and computationally derived backgrounds with a mixture of human and Drosophila cells to assess cross-species interactions during library construction. After normalizing the two methods for counts, they concluded that nonspecific contacts overwhelmed specific contacts by genuine trans-acting RNAs [4]. GRID-seq uses a digestive enzyme for size selection, cutting 19-23 bp from the linker on either side. Due to the small size of the reads, efficient mapping becomes more difficult, increasing the rate of false mapping compared to longer reads (20-100 bp) [5].
 
-# Impact
-## Epigenetic Impact
+## 4. Impact<a name="4"></a>
+
+### 4.1 Epigenetic Impact<a name="4.1"></a>
 
 Epigenetic changes can be thought of as changes that alter expression levels in the genome, but do not alter any DNA. This has implications for proteins that are known to interact with the genome. These are known as transcription factors, and they can raise or lower the rate of transcription. 
 
@@ -66,7 +72,7 @@ Recently, it has been of interest to study different molecules, such as RNA, tha
 
 One well studied example of a ncRNA cis-interacting with chromatin to produce epigenetic changes is known as Xist. Xist is a ncRNA produced in female mammals from a locus on the X-chromosome [5]. Once it has been produced, it covers the X-chromosome it was produced from and silences further transcription. Another example of a RNA cis-interactions causing epigentic affects happens in D.melanogaster. The lncRNAs roX2 and roX1 are involved in a male-specific lethal (MSL) complex, in which they coat the X-chromosomes in males in order to acetylate the histone H4K16 [5]. Because acetylated euchromatin is open, the interaction of the lncRNA increases transcription, essentially doubling transcription. 
 
-## Fusion Transcripts
+### 4.2 Fusion Transcripts<a name="4.2"></a>
 
 Fusion Transcripts are when RNA transcripts get spliced with multiple genes, also known as a fusion gene. Here is an example of what they look like on a genome browser:
  [fusion transcript.](./fusion_gene.jpg "Figure from “Genome-Wide Colocalization of RNA–DNA Interactions and Fusion RNA Pairs.” paper where the mapped read is a a fusion transcript")
