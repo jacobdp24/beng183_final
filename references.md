@@ -1,4 +1,4 @@
-# References
+## References
 
 [1] Sheng Zhong, BENG 183 3D Genome E-Book
 
