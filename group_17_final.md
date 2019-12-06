@@ -5,10 +5,10 @@
 
 1. [Introduction](#1)
 2. [Understanding types of RNA-genome interactions](#2)
-3. [Experimental Techniques](#3)
+3. [Experimental Techniques](#3)<br>
 	3.1. [Methods](#3.1)<br>
 	3.2. [Comparisons to GRID-seq](#3.2)
-4. [Impact](#4)
+4. [Impact](#4)<br>
 	4.1. [Epigenetic Impact](#4.1)<br>
 	4.2. [Fusion Transcripts](#4.2)
 
