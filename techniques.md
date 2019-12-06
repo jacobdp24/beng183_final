@@ -6,7 +6,7 @@ There have been several similar technologies developed recently to analyze the i
 
 The general method is as follows:
 
-![MARGI Overview](comparison.png)
+![Graphical Overview](comparison.png)
 Graphical overview [2]
 
 1. Crosslink the DNA to any nearby RNA, typically using formaldehyde
