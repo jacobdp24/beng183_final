@@ -43,7 +43,6 @@ One of the other major characteristics that separate different types of RNA-geno
 There have been several similar technologies developed recently to analyze the interactions between RNA and chromatin, including MARGI, ChAR-seq, and GRID-seq. The overarching method to identify such interactions is surprisingly similar between these technologies.
 
 The general method is as follows:
-
 1. Crosslink the DNA to any nearby RNA, typically using formaldehyde
 2. Ligate the RNA then the DNA to a synthesized linker
 	* The linker needs to achieve three goals: one end must selectively bind to RNA and the other to DNA, have a means to identify which end bound to RNA or DNA, and a method for capture after fragmentation
@@ -93,7 +92,7 @@ These Fusion transcripts are commonly produced by cancer cells, and because of t
 It has been shown that RNA-DNA interactions may lead to the formation of fusion transcripts [6]. The mapping of the fusion transcript sites to the RNA-DNA interaction site was through iMARGI technology, where the only difference between MARGI and iMARGI is that iMARGI carries out ligation in-situ and MARGI does this strepdavidin beads [6]. The idea behind this is called the RNA-poise model. 
 
 ![RNA-Poise model](./img/poise.jpg)<br>
-**Figure 5: RNA-Poise Model [6]**
+**Figure 4: RNA-Poise Model [6]**
 
 
 This model reconciles the distance problem of transplicing. The idea is that if a RNA transcript from one gene is close spatially to another while it is being formed, it could be transpliced into the other gene's transcript [6].
