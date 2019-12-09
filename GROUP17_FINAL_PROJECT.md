@@ -1,10 +1,12 @@
 # RNA-Chromatin Interactions
 
-###### BENG183 Final Paper date: 12/9/2019
+###### BENG183 Final Paper Date: 12/9/2019
 ###### Group 17: Aditya Sampath, Blake Gabel, Jacob Doering-Powell
 
 1. [Introduction](#1)
-2. [Understanding types of RNA-genome interactions](#2)
+2. [Understanding types of RNA-genome interactions](#2)<br>
+	2.1. [Trans-Acting v. Cis-Acting RNA](#2.1)<br>
+	2.2. [Proximal RNA-genome interactions](#2.2)
 3. [Experimental Techniques](#3)<br>
 	3.1. [Methods](#3.1)<br>
 	3.2. [Comparisons to GRID-seq](#3.2)
@@ -20,12 +22,17 @@ RNA exists in the cell not only as an intermediary between DNA and the final pro
 
 RNA-genome interactions can be trans-acting or cis-acting. Trans-acting RNA-genome interactions occur when RNA that was synthesized in one part of the genome is moved to a separate location in the genome to interact with those loci. Cis-acting RNA-genome interactions occur when RNA that was synthesized in one part of the genome stays in that location. However, RNA, whether cis or trans, can regulate gene expression. It can positively regulate expression by helping chromatin stay as euchromatin, and it can negatively regulate expression by converting euchromatin to heterochromatin [2].
 
-![Figure One](figure1.png)<br>
+![Figure One](./img/figure1.png)<br>
 **Figure 1: Different Modes of RNA-Chromatin Interactions. [2]**
+
+
+### 2.1 Trans-Acting v. Cis-Acting RNA<a name="2.1"></a>
 
 Cis-acting RNA often occurs due to a mechanism known as R-loop formation, where the RNA is annealed back to the DNA during transcription, forming a RNA-DNA hybrid loop opposite a single strand of DNA. A common type of cis-acting RNAs are protein-coding pre-mRNAs, some of which stay attached to chromatin rather than turn into mature mRNA. Those pre-mRNAs then associate with RNA Polymerase II machinery, and positively regulate transcription [2].
 
 Meanwhile, trans-acting RNA occurs due to the formation of triplex structures, which occurs when RNA Hoogsteen pairs with the major groove of DNA. Multiple types of long non-coding RNA (lncRNAs) use this type of structure to exert regulatory functions on the DNA. Oftentimes, trans-acting RNA interactions are protein-mediated; a RNA binding protein binds to RNA which has bound to a DNA factor [2].
+
+### 2.2 Proximal RNA-genome interactions<a name="2.2"></a>
 
 One of the other major characteristics that separate different types of RNA-genome interactions are the proximity between the RNA and the genome that are interacting. Due to the small amount of space in the nucleus, high amounts of interactions occur between molecules that aren’t located immediately next to one another. Many of these distant interactions form what’s known as a transcription hub- active gene clusters that are not close in terms of linear chromosomal distance but are folded into close spatial proximity. In general, while the majority of RNA-genome interactions are proximal (within 2000bp of each other on the same chromosome), a still-significant amount are farther away. More specifically, 4% are distal (more than 2000bp away on the same chromosome), and 15-20% were are inter-chromosomal, indicating a large amount of long range RNA-DNA interactions [2].
 
@@ -36,6 +43,13 @@ One of the other major characteristics that separate different types of RNA-geno
 There have been several similar technologies developed recently to analyze the interactions between RNA and chromatin, including MARGI, ChAR-seq, and GRID-seq. The overarching method to identify such interactions is surprisingly similar between these technologies.
 
 The general method is as follows:
+<<<<<<< HEAD:GROUP17_FINAL_PROJECT.md
+
+![Graphical Overview](./img/comparison.png)
+Graphical overview [2]
+
+=======
+>>>>>>> ad4c762e77592276e4f9d4b6eeab76a6c8e71d67:group_17_final.md
 1. Crosslink the DNA to any nearby RNA, typically using formaldehyde
 2. Ligate the RNA then the DNA to a synthesized linker
 	* The linker needs to achieve three goals: one end must selectively bind to RNA and the other to DNA, have a means to identify which end bound to RNA or DNA, and a method for capture after fragmentation
@@ -52,10 +66,9 @@ As shown in the figure above, the main differences in the technologies lie in th
 
 Each method has its own unique pipeline for data analysis. MARGI developed two RNA-genome maps, one for human embryonic stem cells and one for human embyronic kidney cells. They then compared their maps to known ChIP-seq maps to identify the types of RNA that commonly associate with epigenetic modifications, such as histone methylation and acetylation. They found positive correlations with H3K4me3 and H3K27ac and a negative correlation with H3K9me3, all associated with heterochromatin [3]. GRID-seq took a similar approach, comparing their mapped genome/transcriptome to HiC maps. They found that the majority of RNA associated near transcription start sites, specifically with known promoters and enhancers, and exhibited high levels of tissue specificity. Below is an example of processed ChAR-seq data that maps the relative position of transcribed RNA to its genomic location post-transcription to examine which types or RNA typically exhibit a cis-acting or trans-acting type interaction.
 
-![ChAR-seq](charseq.jpg)
+![ChAR-seq](./img/charseq.jpg)
 **Figure 3: ChAR-seq data**  
-**A.** All mapped RNA (y-axis) to genome location (x-axis) **B.** mRNA **C.** snRNA **D.** Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. **E.** Scatter plot of length normalized chromatin-contacts versus total expression for each RNA.  
-[5]
+**A.** All mapped RNA (y-axis) to genome location (x-axis) **B.** mRNA **C.** snRNA **D.** Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. **E.** Scatter plot of length normalized chromatin-contacts versus total expression for each RNA. [5]
 
 ### 3.2 Comparisons to GRID-seq<a name="3.2"></a>
 After developing their new technology, GRID-seq, Zhou and his colleagues compared it to two other recently developed technologies, MARGI and ChAR-seq.
@@ -79,10 +92,14 @@ One well studied example of a ncRNA cis-interacting with chromatin to produce ep
 ### 4.2 Fusion Transcripts<a name="4.2"></a>
 
 Fusion Transcripts are when RNA transcripts get spliced with multiple genes, also known as a fusion gene. Here is an example of what they look like on a genome browser:
-![fusion transcript.](./fusion_gene.jpg "Figure from “Genome-Wide Colocalization of RNA–DNA Interactions and Fusion RNA Pairs.” paper where the mapped read is a a fusion transcript")
+![fusion transcript.](./img/fusion_gene.jpg "Figure from “Genome-Wide Colocalization of RNA–DNA Interactions and Fusion RNA Pairs.” paper where the mapped read is a a fusion transcript")
+
 These Fusion transcripts are commonly produced by cancer cells, and because of this, detection of fusion transcripts can be used for prognostic and diagnostic purposes. An example of this that molecular diagnostic companies take advantage of is the detection of the PML-RARA fusion transcript that is found in certain types of leukemia. The primary way these fusion transcripts are detected is from RNA-sequencing or RT-qPCR analysis.
 
-It has been shown that RNA-DNA interactions may lead to the formation of fusion transcripts [6]. The mapping of the fusion transcript sites to the RNA-DNA interaction site was through iMARGI technology, where the only difference between MARGI and iMARGI is that iMARGI carries out ligation in-situ and MARGI does this strepdavidin beads [6]. The idea behind this is called the RNA-poise model. ![RNA-Poise model](./poise.jpg "Figure from “Genome-Wide Colocalization of RNA–DNA Interactions and Fusion RNA Pairs.” paper")
+It has been shown that RNA-DNA interactions may lead to the formation of fusion transcripts [6]. The mapping of the fusion transcript sites to the RNA-DNA interaction site was through iMARGI technology, where the only difference between MARGI and iMARGI is that iMARGI carries out ligation in-situ and MARGI does this strepdavidin beads [6]. The idea behind this is called the RNA-poise model. 
+
+![RNA-Poise model](./img/poise.jpg)<br>
+**Figure 4: RNA-Poise Model [6]**
 
 
 This model reconciles the distance problem of transplicing. The idea is that if a RNA transcript from one gene is close spatially to another while it is being formed, it could be transpliced into the other gene's transcript [6].
