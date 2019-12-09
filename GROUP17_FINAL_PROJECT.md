@@ -52,15 +52,15 @@ The general method is as follows:
 6. Adapters are added to the fragments which are required for next-generation sequencing
 7. Fragments are sequenced and appropriately mapped to either the genome or transcriptome
 
-![Graphical Overview](./img/comparison.png)
+![Graphical Overview](./img/comparison.png)<br>
 **Figure 2: Graphical overview [2]**
 
 As shown in the figure above, the main differences in the technologies lie in the last few steps prior to sequencing. MARGI uses a circularization step followed by a cleavage the linker to allow for easy identification of RNA/DNA reads after paired-end sequencing. ChAR-seq and GRID-seq are largely the same with the exception of the size selection step that GRID-seq uses to better isolate fragments of interest (labeled MmeI digestion in the figure). They also both use long single-end reads rather than paired-end reads like MARGI.
 
 Each method has its own unique pipeline for data analysis. MARGI developed two RNA-genome maps, one for human embryonic stem cells and one for human embyronic kidney cells. They then compared their maps to known ChIP-seq maps to identify the types of RNA that commonly associate with epigenetic modifications, such as histone methylation and acetylation. They found positive correlations with H3K4me3 and H3K27ac and a negative correlation with H3K9me3, all associated with heterochromatin [3]. GRID-seq took a similar approach, comparing their mapped genome/transcriptome to HiC maps. They found that the majority of RNA associated near transcription start sites, specifically with known promoters and enhancers, and exhibited high levels of tissue specificity. Below is an example of processed ChAR-seq data that maps the relative position of transcribed RNA to its genomic location post-transcription to examine which types or RNA typically exhibit a cis-acting or trans-acting type interaction.
 
-![ChAR-seq](./img/charseq.jpg)
-**Figure 3: ChAR-seq data**  
+![ChAR-seq](./img/charseq.jpg)<br>
+**Figure 3: ChAR-seq data [5]**  
 **A.** All mapped RNA (y-axis) to genome location (x-axis) **B.** mRNA **C.** snRNA **D.** Cumulative frequency of length-normalized contacts for 16,812 RNAs identified on the ‘RNA-side’ of chimeric reads. **E.** Scatter plot of length normalized chromatin-contacts versus total expression for each RNA. [5]
 
 ### 3.2 Comparisons to GRID-seq<a name="3.2"></a>
@@ -86,7 +86,7 @@ One well studied example of a ncRNA cis-interacting with chromatin to produce ep
 
 Fusion Transcripts are when RNA transcripts get spliced with multiple genes, also known as a fusion gene.
 
-![fusion transcript.](./img/fusion_gene.jpg)
+![fusion transcript.](./img/fusion_gene.jpg)<br>
 **Figure 4: Fusion Transcripts in Genome Browser [6]**
 
 These Fusion transcripts are commonly produced by cancer cells, and because of this, detection of fusion transcripts can be used for prognostic and diagnostic purposes. An example of this that molecular diagnostic companies take advantage of is the detection of the PML-RARA fusion transcript that is found in certain types of leukemia. The primary way these fusion transcripts are detected is from RNA-sequencing or RT-qPCR analysis.
