@@ -52,7 +52,7 @@ The general method is as follows:
 6. Adapters are added to the fragments which are required for next-generation sequencing
 7. Fragments are sequenced and appropriately mapped to either the genome or transcriptome
 
-![Graphical Overview](comparison.png)
+![Graphical Overview](./img/comparison.png)
 **Figure 2: Graphical overview [2]**
 
 As shown in the figure above, the main differences in the technologies lie in the last few steps prior to sequencing. MARGI uses a circularization step followed by a cleavage the linker to allow for easy identification of RNA/DNA reads after paired-end sequencing. ChAR-seq and GRID-seq are largely the same with the exception of the size selection step that GRID-seq uses to better isolate fragments of interest (labeled MmeI digestion in the figure). They also both use long single-end reads rather than paired-end reads like MARGI.
@@ -84,15 +84,17 @@ One well studied example of a ncRNA cis-interacting with chromatin to produce ep
 
 ### 4.2 Fusion Transcripts<a name="4.2"></a>
 
-Fusion Transcripts are when RNA transcripts get spliced with multiple genes, also known as a fusion gene. Here is an example of what they look like on a genome browser:
-![fusion transcript.](./img/fusion_gene.jpg "Figure from “Genome-Wide Colocalization of RNA–DNA Interactions and Fusion RNA Pairs.” paper where the mapped read is a a fusion transcript")
+Fusion Transcripts are when RNA transcripts get spliced with multiple genes, also known as a fusion gene.
+
+![fusion transcript.](./img/fusion_gene.jpg)
+**Figure 4: Fusion Transcripts in Genome Browser [6]**
 
 These Fusion transcripts are commonly produced by cancer cells, and because of this, detection of fusion transcripts can be used for prognostic and diagnostic purposes. An example of this that molecular diagnostic companies take advantage of is the detection of the PML-RARA fusion transcript that is found in certain types of leukemia. The primary way these fusion transcripts are detected is from RNA-sequencing or RT-qPCR analysis.
 
 It has been shown that RNA-DNA interactions may lead to the formation of fusion transcripts [6]. The mapping of the fusion transcript sites to the RNA-DNA interaction site was through iMARGI technology, where the only difference between MARGI and iMARGI is that iMARGI carries out ligation in-situ and MARGI does this strepdavidin beads [6]. The idea behind this is called the RNA-poise model. 
 
 ![RNA-Poise model](./img/poise.jpg)<br>
-**Figure 4: RNA-Poise Model [6]**
+**Figure 5: RNA-Poise Model [6]**
 
 
 This model reconciles the distance problem of transplicing. The idea is that if a RNA transcript from one gene is close spatially to another while it is being formed, it could be transpliced into the other gene's transcript [6].
